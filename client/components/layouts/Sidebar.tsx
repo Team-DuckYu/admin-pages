@@ -2,20 +2,16 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {
-  HomeIcon,
-  ShoppingCartIcon,
-  TruckIcon,
-  CubeIcon,
-  UserGroupIcon
-} from '@heroicons/react/24/outline';
+import { HomeIcon, ShoppingCartIcon, TruckIcon, Package, HeadsetIcon, ChartPie, Warehouse } from 'lucide-react'
 
 const menuItems = [
-  { name: '대시보드', icon: HomeIcon, path: '/home' },
+  { name: '홈', icon: HomeIcon, path: '/home' },
   { name: '주문 관리', icon: ShoppingCartIcon, path: '/orders' },
   { name: '배송 관리', icon: TruckIcon, path: '/delivery' },
-  { name: '상품 관리', icon: CubeIcon, path: '/products' },
-  { name: '고객 관리', icon: UserGroupIcon, path: '/customers' },
+  { name: '상품 관리', icon: Package, path: '/products' },
+  { name: '창고 관리', icon: Warehouse, path: '/warehouse' },
+  { name: 'CS 관리', icon: HeadsetIcon, path: '/customers' },
+  { name: '통계', icon: ChartPie, path: '/statics' },
 ];
 
 export default function Sidebar() {
@@ -24,7 +20,7 @@ export default function Sidebar() {
   return (
     <aside className="w-64 bg-gray-800 text-white">
       <div className="p-6">
-        <h2 className="text-2xl font-bold">SCM System</h2>
+        <h2 className="text-2xl font-bold">ROO FAMILY</h2>
       </div>
       
       <nav className="mt-6">

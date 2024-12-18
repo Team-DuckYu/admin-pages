@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow h-16">
       <div className="h-full px-6 flex items-center justify-between">
-        <h1 className="text-xl font-semibold text-gray-800">SCM 관리자</h1>
+        <h3 className="text-sm text-gray-400">Home</h3>
         
         <div className="flex items-center space-x-4">
           <button className="relative p-2 rounded-full hover:bg-gray-100">
