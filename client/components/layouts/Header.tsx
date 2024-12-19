@@ -3,9 +3,8 @@ import { BellIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 export default function Header() {
   return (
     <header className="bg-white shadow h-16">
-      <div className="h-full px-6 flex items-center justify-between">
+      <div className="h-full px-10 flex items-center justify-between">
         <h3 className="text-sm text-gray-400">Home</h3>
-        
         <div className="flex items-center space-x-4">
           <button className="relative p-2 rounded-full hover:bg-gray-100">
             <BellIcon className="h-6 w-6 text-gray-600" />

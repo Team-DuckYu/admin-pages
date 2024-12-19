@@ -13,8 +13,8 @@ interface MetricCardProps {
 const MetricElement = ({ href, title, value, isComplain, icon:Icon }: MetricCardProps) => (
   <Link href={href}>
     <div className="flex flex-col items-center gap-2">
-      {Icon && <Icon className="w-6 h-6 text-gray-500" />}
-      <h3 className="text-gray-500 text-base">{title}</h3>
+      {Icon && <Icon className="w-6 h-6 text-gray-700" />}
+      <h3 className="text-gray-700 text-base">{title}</h3>
       <p className={`${isComplain ? "text-red-500" : "text-blue-500"} text-lg font-bold`}>{value}</p>
     </div>
   </Link>
@@ -22,8 +22,9 @@ const MetricElement = ({ href, title, value, isComplain, icon:Icon }: MetricCard
 
 export default function DashboardMetrics() {
   return (
-    // 주문현황
+    
     <>
+      {/* 주문현황 */}
       <div className="bg-white flex flex-col rounded-lg shadow">
         <div className="flex justify-between items-center border-b p-4 border-gray-200">
           <h2 className="text-lg font-bold">주문현황</h2>
@@ -41,7 +42,7 @@ export default function DashboardMetrics() {
             <MetricElement title="배송완료" value="15" href="/orders" icon={PackageCheck}/>
         </div>
       </div>
-      
+      {/* 클레임현황 */}
       <div className="bg-white flex flex-col rounded-lg shadow">
         <div className="flex justify-between items-center border-b p-4 border-gray-200">
           <h2 className="text-lg font-bold">클레임현황</h2>
